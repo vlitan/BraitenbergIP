@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Mon Feb 20 16:47:05 2017
-# Process ID: 13420
+# Start of session at: Mon Feb 20 17:44:26 2017
+# Process ID: 5244
 # Current directory: D:/Code/VHDL/BraitenbergIP/project_1.runs/synth_1
 # Command line: vivado.exe -log comparator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comparator.tcl
 # Log file: D:/Code/VHDL/BraitenbergIP/project_1.runs/synth_1/comparator.vds

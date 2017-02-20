@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Feb 20 16:49:07 2017'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Feb 20 17:46:26 2017'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1756540" description="" />
-  <keyValuePair key="date_generated" value="Mon Feb 20 16:49:07 2017" description="" />
+  <keyValuePair key="date_generated" value="Mon Feb 20 17:46:26 2017" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2016.4 (64-bit)" description="" />
   <keyValuePair key="project_id" value="8b0acff9099d4aafbbca2728783772ab" description="" />
-  <keyValuePair key="project_iteration" value="1" description="" />
+  <keyValuePair key="project_iteration" value="2" description="" />
   <keyValuePair key="random_id" value="a4dcb9f71fdf55dd9d357467fa9c4bca" description="" />
   <keyValuePair key="registration_id" value="211218160_1777523234_210649968_442" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
@@ -115,7 +115,7 @@
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="csg324" description="" />
-   <keyValuePair key="pct_clock_constrained" value="0.000000" description="" />
+   <keyValuePair key="pct_clock_constrained" value="1.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="0" description="" />
    <keyValuePair key="platform" value="nt64" description="" />
    <keyValuePair key="process" value="typical" description="" />
@@ -452,8 +452,8 @@
   <section name="usage" level="2" order="2" description="">
    <keyValuePair key="elapsed" value="00:00:30s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="374.250MB" description="" />
-   <keyValuePair key="memory_peak" value="625.648MB" description="" />
+   <keyValuePair key="memory_gain" value="374.461MB" description="" />
+   <keyValuePair key="memory_peak" value="626.168MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="9" description="">
@@ -471,12 +471,19 @@
  <section name="vivado_usage" level="1" order="10" description="">
   <section name="java_command_handlers" level="2" order="1" description="">
    <keyValuePair key="addsources" value="3" description="" />
+   <keyValuePair key="launchprogramfpga" value="1" description="" />
    <keyValuePair key="newproject" value="1" description="" />
-   <keyValuePair key="runbitgen" value="2" description="" />
+   <keyValuePair key="openhardwaremanager" value="2" description="" />
+   <keyValuePair key="openrecenttarget" value="1" description="" />
+   <keyValuePair key="programdevice" value="1" description="" />
+   <keyValuePair key="projectsettingscmdhandler" value="1" description="" />
+   <keyValuePair key="runbitgen" value="8" description="" />
+   <keyValuePair key="runimplementation" value="1" description="" />
    <keyValuePair key="savefileproxyhandler" value="1" description="" />
-   <keyValuePair key="showview" value="1" description="" />
+   <keyValuePair key="showview" value="4" description="" />
    <keyValuePair key="toolsoptions" value="7" description="" />
    <keyValuePair key="toolstemplates" value="1" description="" />
+   <keyValuePair key="viewtaskimplementation" value="1" description="" />
   </section>
   <section name="other_data" level="2" order="2" description="">
    <keyValuePair key="guimode" value="1" description="" />

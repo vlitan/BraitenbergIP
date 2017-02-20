@@ -42,8 +42,13 @@ entity comparator is
   );
 end comparator;
 
-architecture Behavioral of comparator is--TODO use generate
-
+architecture Behavioral of comparator is
+signal temp : std_logic_vector(DATA_WIDTH - 1 downto 0);
 begin
-	output <= (a(0) xnor b(0)) and (a(1) xnor b(1));
+	temp(0) <= a(0) xnor b(0);
+	GEN : for i in 1 to DATA_WIDTH - 1 generate 
+	begin
+		temp(i) <= (a(i) xnor b(i)) and temp(i - 1);
+	end generate GEN;
+	output <= temp(DATA_WIDTH - 1);
 end Behavioral;
