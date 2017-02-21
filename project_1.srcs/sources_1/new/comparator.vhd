@@ -19,8 +19,8 @@
 ----------------------------------------------------------------------------------
 
 
---library IEEE;
---use IEEE.STD_LOGIC_1164.ALL;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -31,24 +31,22 @@
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
---entity comparator is
--- generic (
--- DATA_WIDTH : POSITIVE := 4
---);
---  Port ( 
---  a : in std_logic_vector(DATA_WIDTH - 1 downto 0);
---  b : in std_logic_vector(DATA_WIDTH - 1 downto 0);
---  output: out std_logic
---  );
---end comparator;
+entity comparator8 is
+  Port ( 
+  a		: in std_logic_vector(7 downto 0);
+  b		: in std_logic_vector(7 downto 0);
+  output: out std_logic
+  );
+end comparator8;
 
---architecture Behavioral of comparator is
---signal temp : std_logic_vector(DATA_WIDTH - 1 downto 0);
---begin
---	temp(0) <= a(0) xnor b(0);
---	GEN : for i in 1 to DATA_WIDTH - 1 generate 
---	begin
---		temp(i) <= (a(i) xnor b(i)) and temp(i - 1);
---	end generate GEN;
---	output <= temp(DATA_WIDTH - 1);
---end Behavioral;
+architecture Behavioral of comparator8 is
+signal temp : std_logic_vector(7 downto 0);
+begin
+	process(a, b) begin
+		if (a < b) then
+			output <= '1';
+		else
+			output <= '0';
+		end if;
+	end process;
+end Behavioral;

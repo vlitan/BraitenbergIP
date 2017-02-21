@@ -34,28 +34,31 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity counter is
- generic (
-	DATA_WIDTH : POSITIVE := 4
- );
+entity counter8 is
  Port ( 
- clk	: in std_logic;
- enable	: in std_logic; --active low
- reset	: in std_logic; --active high
- output	: out std_logic_vector(DATA_WIDTH - 1 downto 0)
+ clk		: in std_logic;
+ enable		: in std_logic; --active high
+ reset		: in std_logic; --active high
+ output		: out std_logic_vector(7 downto 0);
+ rollover	: out std_logic
  );
-end counter;
+end counter8;
 
-architecture Behavioral of counter is
-	signal temp : std_logic_vector(DATA_WIDTH - 1 downto 0);
+architecture Behavioral of counter8 is
+	signal temp : std_logic_vector(7 downto 0);
 begin 
 process(clk, reset)
 	begin
 		if reset = '1' then
-			temp <= "0000";--0000";
+			temp <= "00000000";
 		elsif (rising_edge(clk)) then
-			if enable = '0' then
+			if enable = '1' then
 				temp <= temp + 1;
+				if temp = "11111110" then
+					rollover <= '1';
+				else
+					rollover <= '0';
+				end if;
 			end if;
 		end if;
 	end process;

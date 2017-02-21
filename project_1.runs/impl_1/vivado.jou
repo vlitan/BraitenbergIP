@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Mon Feb 20 19:33:07 2017
-# Process ID: 12084
+# Start of session at: Tue Feb 21 15:22:39 2017
+# Process ID: 8004
 # Current directory: D:/Code/VHDL/BraitenbergIP/project_1.runs/impl_1
-# Command line: vivado.exe -log counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter.tcl -notrace
-# Log file: D:/Code/VHDL/BraitenbergIP/project_1.runs/impl_1/counter.vdi
+# Command line: vivado.exe -log pwm_tester.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pwm_tester.tcl -notrace
+# Log file: D:/Code/VHDL/BraitenbergIP/project_1.runs/impl_1/pwm_tester.vdi
 # Journal file: D:/Code/VHDL/BraitenbergIP/project_1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source counter.tcl -notrace
+source pwm_tester.tcl -notrace
